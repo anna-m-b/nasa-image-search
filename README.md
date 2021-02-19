@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Machester Codes React Technical Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Brief
 
-## Available Scripts
+Technical Task - React Developer Role
 
-In the project directory, you can run:
+You are expected to build a React web application that allows space fans to search for images based on a query relating to space. You are provided the NASA API endpoint for image search.  
 
-### `npm start`
+We want you to consider and add anything to your repository that should be included was this to be a live website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The following functionalities need to be implemented:
+● A Search page which allows space fans to search for images by keyword
+● Images must be returned upon a successful search
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The styling is up to you but will be taken into consideration when evaluating your application.
 
-### `npm test`
+We estimate this task to take ​​10 hours​​. Once you have completed the task upload the repository to GitHub and send the link to xxxxx@xxx.com. ​Deadline: 5 days from receiving.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Relevant API endpoints:
 
-### `npm run build`
+image search:
+GET​​ ​​https://images-api.nasa.gov/search ​Params: ​​q
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Assets
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You may use this asset for your application: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Example below:
 
-### `npm run eject`
+<img src='./example-image.jpg' alt="example" width='400px'/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+***
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Planning Stages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### User Stories - Necessary
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+As a space fan, I want to enter a search term,  
+So that I can get space images of a certain content.  
 
-## Learn More
+As a space fan, I want to see results displayed in image form,  
+So I can quickly decide which image to use.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As a space fan, I want the most relevant results displayed first,  
+So I can find images efficiently.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+As I space fan, I want to receive an appropriate response if a search has no results,
+So I understand why no images have been returned.  
 
-### Code Splitting
+### User Stories - Desirable Extras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I'd like a limited number of results to be returned,
+So the page doesn't load too slowly.
+I'd like a load more button,
+So I can choose to see more results.
 
-### Analyzing the Bundle Size
+As a space fan, I'd like the option to click through to the original,  
+So I can get more information about this image.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+As a space fan, I'd like to filter results by type,
+So I can get images of a certain category by keyword.
+(e.g. real moon images as opposed to representations/informational)
 
-### Making a Progressive Web App
+As a space fan, I'd like to get a random collection of images,
+without entering a keyword.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Initial Mockup with Component map
 
-### Deployment
+<img src='./src/images/nasa-mockup-comps.png' alt="example" width='550px'/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+***  
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
