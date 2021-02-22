@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { mockResults } from './mockResults';
+import { mockResults } from '../test-helpers/mockResults';
 import Results from '../components/Results';
 
 describe('Results', () => {

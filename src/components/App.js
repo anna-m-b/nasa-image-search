@@ -22,7 +22,6 @@ function App() {
     e.preventDefault();
     setIsLoading(true);
     setSearchResults();
-
     try {
       const results = await getImagesData(searchInput);
       setSearchResults(results);
@@ -59,15 +58,14 @@ function App() {
           Oops, something went wrong. Please try again!
         </p>
       )}
-      {searchResults &&
-        !searchResults.length &&
-          <p className="no-results-message">
-            Oh no! Nothing was found in the database.
-          </p>
-        }
-      {searchResults && searchResults.length > 0 && 
+      {searchResults && !searchResults.length && (
+        <p className="no-results-message">
+          Oh no! Nothing was found in the database.
+        </p>
+      )}
+      {searchResults && searchResults.length > 0 && (
         <Results results={searchResults} />
-      }
+      )}
       <Navigation
         loadNextPage={loadNextPage}
         loadPrevPage={loadPrevPage}

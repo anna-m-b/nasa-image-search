@@ -43,9 +43,6 @@ exports[`App on loading, before searching renders correctly 1`] = `
       </span>
     </form>
     <div
-      class="results"
-    />
-    <div
       class="navigation"
     >
       <button
