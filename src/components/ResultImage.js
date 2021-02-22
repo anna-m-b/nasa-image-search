@@ -5,12 +5,17 @@ const ResultImage = ({ url, description, linkToOriginal }) => {
   return (
     <div className="result-image">
       <a href={linkToOriginal}>
-        <img className="result-image_img" src={url} alt={description} />
+        <img
+          className="result-image_img"
+          src={url}
+          alt={description}
+          data-testid="result-image"
+        />
       </a>
     </div>
   );
 };
 
-// ResultImage.PropTypes 
+// ResultImage.PropTypes
 
 export default ResultImage;

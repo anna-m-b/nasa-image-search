@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="results"
+    data-testid="results"
+  >
+    <div
+      class="result-image"
+    >
+      <a
+        href="http://images-assets.nasa.gov/image/PIA18906/PIA18906~orig.jpg"
+      >
+        <img
+          alt="Sun Shines in High-Energy X-rays"
+          class="result-image_img"
+          data-testid="result-image"
+          src="http://images-assets.nasa.gov/image/PIA18906/PIA18906~thumb.jpg"
+        />
+      </a>
+    </div>
+    <div
+      class="result-image"
+    >
+      <a
+        href="http://images-assets.nasa.gov/image/PIA15179/PIA15179~orig.jpg"
+      >
+        <img
+          alt="The Sun Magnetic Field"
+          class="result-image_img"
+          data-testid="result-image"
+          src="http://images-assets.nasa.gov/image/PIA15179/PIA15179~thumb.jpg"
+        />
+      </a>
+    </div>
+    <div
+      class="result-image"
+    >
+      <a
+        href="http://images-assets.nasa.gov/image/PIA14729/PIA14729~orig.jpg"
+      >
+        <img
+          alt="Mercury Transit Across the Sun"
+          class="result-image_img"
+          data-testid="result-image"
+          src="http://images-assets.nasa.gov/image/PIA14729/PIA14729~thumb.jpg"
+        />
+      </a>
+    </div>
+    <div
+      class="result-image"
+    >
+      <a
+        href="http://images-assets.nasa.gov/image/PIA17669/PIA17669~orig.jpg"
+      >
+        <img
+          alt="Pulses from the Sun"
+          class="result-image_img"
+          data-testid="result-image"
+          src="http://images-assets.nasa.gov/image/PIA17669/PIA17669~thumb.jpg"
+        />
+      </a>
+    </div>
+    <div
+      class="result-image"
+    >
+      <a
+        href="http://images-assets.nasa.gov/image/PIA09771/PIA09771~orig.jpg"
+      >
+        <img
+          alt="Filtering the Sun"
+          class="result-image_img"
+          data-testid="result-image"
+          src="http://images-assets.nasa.gov/image/PIA09771/PIA09771~thumb.jpg"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

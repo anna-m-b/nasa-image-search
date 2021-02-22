@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Loading = () => {
-  return <h1 className="loading" styles={{ margin: '20px' }}> Loading... </h1>;
+  return <h3 className="loading" styles={{ margin: '20px' }}> Loading... </h3>;
 };
 
 export default Loading;

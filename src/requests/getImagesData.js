@@ -6,7 +6,7 @@ const getImagesData = async (searchInput, pageNumber = 1) => {
   );
 
   const collection = response.data.collection;
- 
+
   const getAssets = async () => {
     return Promise.all(collection.items.map((item) => axios.get(item.href)));
   };
