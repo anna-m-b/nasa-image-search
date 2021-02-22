@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import '../styles/App.css';
 import Header from './Header';
 import SearchForm from './SearchForm';
@@ -22,6 +21,7 @@ function App() {
     e.preventDefault();
     setIsLoading(true)
     const results = await getImagesData(searchInput);
+    console.log({results})
     setSearchResults(results);
     setPageNumber(1);
     setIsLoading(false)

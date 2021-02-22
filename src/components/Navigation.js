@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Navigation = ({ loadNextPage, loadPrevPage, pageNumber }) => {
   return (
@@ -10,11 +11,21 @@ const Navigation = ({ loadNextPage, loadPrevPage, pageNumber }) => {
       >
         Previous Page
       </button>
-      <button className="next-page_button" onClick={loadNextPage}>
+      <button
+        className="next-page_button"
+        onClick={loadNextPage}
+        disabled={!pageNumber}
+      >
         Next Page
       </button>
     </div>
   );
+};
+
+Navigation.propTypes = {
+  loadNextPage: PropTypes.func.isRequired,
+  loadPrevPage: PropTypes.func.isRequired,
+  pageNumber: PropTypes.number.isRequired,
 };
 
 export default Navigation;

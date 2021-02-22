@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App on loading, before searching renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="header"
+    >
+      <img
+        alt="Nasa Logo"
+        class="header_nasa-logo"
+        src="nasa.jpg"
+        width="500px"
+      />
+    </div>
+    <form
+      class="search-form"
+    >
+      <label
+        class="search-form_label"
+        for="search-input"
+      >
+        Search the NASA images database
+      </label>
+      <span
+        class="search-form_input-and-button"
+      >
+        <input
+          class="search-form_input"
+          id="search-input"
+          placeholder="Enter a search term"
+          type="text"
+          value=""
+        />
+        <button
+          class="search-form_button"
+          type="submit"
+        >
+          Search
+        </button>
+      </span>
+    </form>
+    <div
+      class="results"
+    />
+    <div
+      class="navigation"
+    >
+      <button
+        class="prev-page_button"
+        disabled=""
+      >
+        Previous Page
+      </button>
+      <button
+        class="next-page_button"
+        disabled=""
+      >
+        Next Page
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

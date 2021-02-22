@@ -35,33 +35,40 @@ Example below:
 
 ### User Stories - Necessary
 
-As a space fan, I want to enter a search term,  
+As a space fan...
+
+- [ ] I want to enter a search term,  
 So that I can get space images of a certain content.  
+<br/>  
 
-As a space fan, I want to see results displayed in image form,  
+- [ ] I want to see results displayed in image form,  
 So I can quickly decide which image to use.  
+<br/>  
 
-As a space fan, I want the most relevant results displayed first,  
-So I can find images efficiently.  
-
-As I space fan, I want to receive an appropriate response if a search has no results,
+- [ ] I want to click to open the original image,
+So I can access the image in its original size.
+<br />
+  
+- [ ] I want to receive an appropriate message if a search has no results,
 So I understand why no images have been returned.  
+<br/>  
+
 
 ### User Stories - Desirable Extras
 
-I'd like a limited number of results to be returned,
-So the page doesn't load too slowly.
-I'd like a load more button,
-So I can choose to see more results.
-
-As a space fan, I'd like the option to click through to the original,  
-So I can get more information about this image.  
-
-As a space fan, I'd like to filter results by type,
-So I can get images of a certain category by keyword.
-(e.g. real moon images as opposed to representations/informational)
-
-As a space fan, I'd like to get a random collection of images,
+- [ ] I'd like a limited number of results to be returned, 
+So the page doesn't load too slowly 
+- [ ] and I'd like a load more button,  
+So I can choose to see more results.  
+<br />
+- [ ] I'd like the option to click through to the original,  
+So I can get more information about this image.    
+<br />
+- [ ] I'd like to filter results by type,  
+So I can get images of a certain category by keyword.  
+(e.g. real moon images as opposed to representations/informational)  
+<br />
+- [ ] I'd like to get a random collection of images,  
 without entering a keyword.
 
 

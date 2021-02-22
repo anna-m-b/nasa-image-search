@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<DocumentFragment>
+  <form
+    class="search-form"
+  >
+    <label
+      class="search-form_label"
+      for="search-input"
+    >
+      Search the NASA images database
+    </label>
+    <span
+      class="search-form_input-and-button"
+    >
+      <input
+        class="search-form_input"
+        id="search-input"
+        placeholder="Enter a search term"
+        type="text"
+        value=""
+      />
+      <button
+        class="search-form_button"
+        type="submit"
+      >
+        Search
+      </button>
+    </span>
+  </form>
+</DocumentFragment>
+`;
