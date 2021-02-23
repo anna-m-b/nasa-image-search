@@ -25,7 +25,7 @@ function App() {
     setSearchResults();
     setError();
     try {
-      const results = await getImagesData(searchInput);
+      const results = await getImagesData(searchInput.trim());
       setSearchResults(results);
       results.length && setPageNumber(1);
     } catch (error) {

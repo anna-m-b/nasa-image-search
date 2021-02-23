@@ -12,14 +12,12 @@ const Results = ({ results }) => {
     );
   } else {
     const display = results.map((item) => {
-      const thumb = item.links.find((link) => /thumb/.test(link));
-      const original = item.links.find((link) => /orig/.test(link));
       return (
         <ResultImage
-          url={thumb}
+          thumb={item.thumb}
           description={item.title}
           key={item.nasa_id}
-          linkToOriginal={original}
+          id={item.nasa_id}
         />
       );
     });

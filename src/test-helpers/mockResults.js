@@ -1,51 +1,27 @@
 export const mockResults = [
   {
-    nasa_id: 'PIA18906',
-    title: 'Sun Shines in High-Energy X-rays',
-    links: [
-      'http://images-assets.nasa.gov/image/PIA18906/PIA18906~orig.jpg',
-      'http://images-assets.nasa.gov/image/PIA18906/PIA18906~medium.jpg',
-      'http://images-assets.nasa.gov/image/PIA18906/PIA18906~small.jpg',
-      'http://images-assets.nasa.gov/image/PIA18906/PIA18906~thumb.jpg',
-      'http://images-assets.nasa.gov/image/PIA18906/metadata.json',
-    ],
+    nasa_id: "PIA12235",
+    title: "Nearside of the Moon",
+    thumb: "https://images-assets.nasa.gov/image/PIA12235/PIA12235~thumb.jpg"
   },
   {
-    nasa_id: 'PIA15179',
-    title: 'The Sun Magnetic Field',
-    links: [
-      'http://images-assets.nasa.gov/image/PIA15179/PIA15179~orig.jpg',
-      'http://images-assets.nasa.gov/image/PIA15179/PIA15179~small.jpg',
-      'http://images-assets.nasa.gov/image/PIA15179/PIA15179~thumb.jpg',
-      'http://images-assets.nasa.gov/image/PIA15179/metadata.json',
-    ],
+    nasa_id: "PIA13517",
+    title: "Color of the Moon",
+    thumb: "https://images-assets.nasa.gov/image/PIA13517/PIA13517~thumb.jpg"
   },
   {
-    nasa_id: 'PIA14729',
-    title: 'Mercury Transit Across the Sun',
-    links: [
-      'http://images-assets.nasa.gov/image/PIA14729/PIA14729~orig.jpg',
-      'http://images-assets.nasa.gov/image/PIA14729/PIA14729~thumb.jpg',
-      'http://images-assets.nasa.gov/image/PIA14729/metadata.json',
-    ],
+    nasa_id: "PIA12228",
+    title: "Cassini Look at Water on the Moon",
+    thumb: "https://images-assets.nasa.gov/image/PIA12228/PIA12228~thumb.jpg"
   },
   {
-    nasa_id: 'PIA17669',
-    title: 'Pulses from the Sun',
-    links: [
-      'http://images-assets.nasa.gov/image/PIA17669/PIA17669~orig.jpg',
-      'http://images-assets.nasa.gov/image/PIA17669/PIA17669~small.jpg',
-      'http://images-assets.nasa.gov/image/PIA17669/PIA17669~thumb.jpg',
-      'http://images-assets.nasa.gov/image/PIA17669/metadata.json',
-    ],
+    nasa_id: "PIA12229",
+    title: "Mineral Mapping the Moon",
+    thumb: "https://images-assets.nasa.gov/image/PIA12229/PIA12229~thumb.jpg"
   },
   {
-    nasa_id: 'PIA09771',
-    title: 'Filtering the Sun',
-    links: [
-      'http://images-assets.nasa.gov/image/PIA09771/PIA09771~orig.jpg',
-      'http://images-assets.nasa.gov/image/PIA09771/PIA09771~thumb.jpg',
-      'http://images-assets.nasa.gov/image/PIA09771/metadata.json',
-    ],
-  }
+    nasa_id: "PIA12233",
+    title: "Mapping the Moon, Point by Point",
+    thumb: "https://images-assets.nasa.gov/image/PIA12233/PIA12233~thumb.jpg"
+  },
 ];
