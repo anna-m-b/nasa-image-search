@@ -6,13 +6,14 @@ import Results from './Results';
 import getImagesData from '../requests/getImagesData';
 import Navigation from './Navigation';
 import Loading from './Loading';
+import ErrorMessage from './ErrorMessage';
 
 function App() {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState();
   const [pageNumber, setPageNumber] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [error, setError] = useState();
 
   const onChange = (e) => {
     setSearchInput(e.target.value);
@@ -22,12 +23,13 @@ function App() {
     e.preventDefault();
     setIsLoading(true);
     setSearchResults();
+    setError();
     try {
       const results = await getImagesData(searchInput);
       setSearchResults(results);
-      setPageNumber(1);
+      results.length && setPageNumber(1);
     } catch (error) {
-      setIsError(true);
+      setError(error);
     }
     setIsLoading(false);
   };
@@ -53,24 +55,15 @@ function App() {
         onSearchSubmit={onSearchSubmit}
       />
       {isLoading && <Loading />}
-      {isError && (
-        <p className="error-message">
-          Oops, something went wrong. Please try again!
-        </p>
+      {error && <ErrorMessage error={error} />}
+      {searchResults && <Results results={searchResults} />}
+      {searchResults && (
+        <Navigation
+          loadNextPage={loadNextPage}
+          loadPrevPage={loadPrevPage}
+          pageNumber={pageNumber}
+        />
       )}
-      {searchResults && !searchResults.length && (
-        <p className="no-results-message">
-          Oh no! Nothing was found in the database.
-        </p>
-      )}
-      {searchResults && searchResults.length > 0 && (
-        <Results results={searchResults} />
-      )}
-      <Navigation
-        loadNextPage={loadNextPage}
-        loadPrevPage={loadPrevPage}
-        pageNumber={pageNumber}
-      />
     </div>
   );
 }

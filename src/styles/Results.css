@@ -1,7 +1,6 @@
 .results {
   width: 90vw;
   margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  columns: 4 200px;
 }
+

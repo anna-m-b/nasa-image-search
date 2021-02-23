@@ -1,20 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Navigation.css';
 
 const Navigation = ({ loadNextPage, loadPrevPage, pageNumber }) => {
   return (
     <div className="navigation">
       <button
-        className="prev-page_button"
         onClick={loadPrevPage}
         disabled={pageNumber <= 1}
+        className={
+          pageNumber <= 1 ? 'navigation_button_disabled' : 'navigation_button'
+        }
       >
         Previous Page
       </button>
       <button
-        className="next-page_button"
         onClick={loadNextPage}
         disabled={!pageNumber}
+        className={
+          pageNumber === 0 ? 'navigation_button_disabled' : 'navigation_button'
+        }
       >
         Next Page
       </button>

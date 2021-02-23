@@ -1,10 +1,13 @@
 .result-image {
-  margin: 0;
-  width: auto;
-  height: 300px;
+  margin: 0.5rem;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+
 }
 
 .result-image_img {
   max-width: 100%;
-  max-height: 100%;
+  border-radius: 5px;
+  
 }

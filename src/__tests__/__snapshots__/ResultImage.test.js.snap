@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultImage it renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="result-image"
+  >
+    <a
+      href="https://via.placeholder.com/500"
+    >
+      <img
+        alt="test title"
+        class="result-image_img"
+        data-testid="result-image"
+        src="https://via.placeholder.com/200"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;

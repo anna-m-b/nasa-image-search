@@ -42,22 +42,6 @@ exports[`App on loading, before searching renders correctly 1`] = `
         </button>
       </span>
     </form>
-    <div
-      class="navigation"
-    >
-      <button
-        class="prev-page_button"
-        disabled=""
-      >
-        Previous Page
-      </button>
-      <button
-        class="next-page_button"
-        disabled=""
-      >
-        Next Page
-      </button>
-    </div>
   </div>
 </DocumentFragment>
 `;

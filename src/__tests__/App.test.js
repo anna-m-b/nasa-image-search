@@ -44,6 +44,7 @@ describe('App', () => {
         expect(getImagesData).toHaveBeenCalledWith('sun');
       });
     });
+
   });
 
   describe('with search result', () => {
@@ -61,36 +62,8 @@ describe('App', () => {
         expect(screen.queryByText(/loading/i)).not.toBeInTheDocument();
       });
     });
-
-    test('an error message is displayed if the api responds with an error', async () => {
-      getImagesData.mockResolvedValue(Promise.reject('failed'));
-      userEvent.click(screen.getByRole('button', { name: /search/i }));
-      await waitFor(() => {
-        expect(
-          screen.getByText(/Oops, something went wrong/i)
-        ).toBeInTheDocument();
-        expect(screen.getByText(/Oops, something went wrong/i)).toHaveClass(
-          'error-message'
-        );
-      });
-    });
-
-    test('a message is displayed if there are no results', async () => {
-      getImagesData.mockResolvedValue([]);
-      userEvent.click(screen.getByRole('button', { name: /search/i }));
-      await waitFor(() => {
-        expect(
-          screen.getByText(/Oh no! Nothing was found in the database/i)
-        ).toBeInTheDocument();
-        expect(
-          screen.getByText(/Oh no! Nothing was found in the database/i)
-        ).toHaveClass('no-results-message');
-        screen.debug()
-      });
-    });
+    
   });
 });
 
-// To Do
 
-// check error handling behaviour

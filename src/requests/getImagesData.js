@@ -1,6 +1,10 @@
 import axios from 'axios';
 
 const getImagesData = async (searchInput, pageNumber = 1) => {
+  if (!searchInput) {
+    throw new Error('Please enter a search word')
+  }
+
   const response = await axios.get(
     `https://images-api.nasa.gov/search?media_type=image&q=${searchInput}&page=${pageNumber}`
   );
@@ -29,3 +33,6 @@ const getImagesData = async (searchInput, pageNumber = 1) => {
 };
 
 export default getImagesData;
+
+//`https://images-api.nasa.gov/search?media_type=image&q=${searchInput}&page=${pageNumber}`
+

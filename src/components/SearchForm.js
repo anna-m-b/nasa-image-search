@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/SearchForm.css';
 
-const SearchForm = ({ onChange, searchInput, onSearchSubmit }) => {
+const SearchForm = ({ onChange, onSearchSubmit, searchInput }) => {
   return (
     <form className="search-form" onSubmit={onSearchSubmit}>
       <label htmlFor="search-input" className="search-form_label">
@@ -24,5 +25,12 @@ const SearchForm = ({ onChange, searchInput, onSearchSubmit }) => {
     </form>
   );
 };
+
+SearchForm.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  onSearchSubmit: PropTypes.func.isRequired,
+  searchInput: PropTypes.string.isRequired
+}
+
 
 export default SearchForm;
