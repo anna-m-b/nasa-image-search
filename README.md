@@ -1,83 +1,134 @@
 # Machester Codes React Technical Test
 
-## The Brief
+## Contents
 
-Technical Task - React Developer Role
+1. [The Brief](#the-brief)
+2. [Screenshots](#screenshots)
+3. [Tech Stack](#tech-stack)
+4. [Fulfilled User Stories](#user-stories)
+5. [Run the app](#Get-the-app-running:-Instructions)
+6. [If I had more time...](#if-i-had-more-time)
 
-You are expected to build a React web application that allows space fans to search for images based on a query relating to space. You are provided the NASA API endpoint for image search.  
+### The Brief
 
-We want you to consider and add anything to your repository that should be included was this to be a live website.
+For this technical test, the brief is to create a React web application that allows space fans to search for images based on a query relating to space.
 
-The following functionalities need to be implemented:
+Requirements
 ● A Search page which allows space fans to search for images by keyword
 ● Images must be returned upon a successful search
 
-The styling is up to you but will be taken into consideration when evaluating your application.
+Styling will also be considered.
 
-We estimate this task to take ​​10 hours​​. Once you have completed the task upload the repository to GitHub and send the link to xxxxx@xxx.com. ​Deadline: 5 days from receiving.
+A nasa logo and has been provided: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
 
-Relevant API endpoints:
-
+The relevant endpoint also is provided:
 image search:
 GET​​ ​​https://images-api.nasa.gov/search ​Params: ​​q
 
-Assets
-
-You may use this asset for your application: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
-
-Example below:
+And this example is given:
 
 <img src='./example-image.jpg' alt="example" width='400px'/>
 
-***
+---
 
-## Planning Stages
+### Screenshots:
 
-### User Stories - Necessary
+**Browser:**
+<img src='./src/images/browser-scrnshot.png' alt="browser screenshot" width='450px' />
+
+<br />
+
+**Mobile:**
+<img src='./src/images/scrnshot-mob-fx.png' alt="mobile screenshot" width='250px' />
+
+---
+
+### Tech Stack
+
+- React (Functional components + hooks)
+- Plain ol' CSS
+
+**For testing**
+- React Testing Library + Jest
+- Postman
+
+**Packages**
+- PropTypes
+- Axios
+
+---
+
+### User Stories
 
 As a space fan...
 
-- [ ] I want to enter a search term,  
-So that I can get space images of a certain content.  
-<br/>  
+- [x] I want to enter a search term,  
+  So that I can get space images of a certain content.  
+  <br/>
 
-- [ ] I want to see results displayed in image form,  
-So I can quickly decide which image to use.  
-<br/>  
+- [x] I want to see results displayed in image form,  
+  So I can quickly decide which image to use.  
+  <br/>
 
-- [ ] I want to click to open the original image,
-So I can access the image in its original size.
-<br />
-  
-- [ ] I want to receive an appropriate message if a search has no results,
-So I understand why no images have been returned.  
-<br/>  
+- [x] I want to click to open the original image,
+  So I can access the image in its original size.
+  <br />
+
+- [x] I want to receive an appropriate message if a search has no results,
+  So I understand why no images have been returned.  
+  <br/>
+
+- [x] I'd like to also search for videos,  
+  So I can access more of Nasa's media.
+  <br />
+
+---
+
+### Get the app running: Instructions
+
+- Clone this repo.
+- `cd` into the project folder.
+- `npm start` to run it locally in your browser.
+- `npm test` to run the tests.
+
+--- 
 
 
-### User Stories - Desirable Extras
+### If I had more time...
 
-- [ ] I'd like a limited number of results to be returned, 
-So the page doesn't load too slowly 
-- [ ] and I'd like a load more button,  
-So I can choose to see more results.  
-<br />
-- [ ] I'd like the option to click through to the original,  
-So I can get more information about this image.    
-<br />
+I'd improve the styling, especially on mobile and very large screens, and refactor my CSS. I'd possibly switch to using StyledComponents or Sass to make the web app more maintainable and easier to develop further.
+
+I would write more tests to improve test coverage. Here's the current coverage report:
+
+<img src='./src/images/test-coverage.png' alt='test coverage report' width="500px"/>
+
+We can see that some branches and functions haven't been tested. These are related to the videos search and the navigation - loading previous and next pages. So I would complete the test suite by testing the key functionality of these features.
+
+
+Also, I'd implement the following:
+
+**User Stories - Desirable Extras**
+
+As a space fan...
+
+- [ ] I'd like the results to load faster, 
+for a smoother experience.
+      <br />
+- [ ] I'd like the option to click through to get more information,  
+      So I can use it as a research tool. 
+      <br />
 - [ ] I'd like to filter results by type,  
-So I can get images of a certain category by keyword.  
-(e.g. real moon images as opposed to representations/informational)  
-<br />
+      So I can get images of a certain category by keyword.  
+      (e.g. real moon images as opposed to representations/informational)  
+      <br />
+
 - [ ] I'd like to get a random collection of images,  
-without entering a keyword.
+      without entering a keyword.
+<br />
 
 
 
-### Initial Mockup with Component map
+---
 
-<img src='./src/images/nasa-mockup-comps.png' alt="example" width='550px'/>
-
-***  
-
-
-
+### Author
+Anna Balquin

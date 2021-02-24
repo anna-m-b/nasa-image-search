@@ -1,0 +1,33 @@
+.result-thumb {
+  margin: 0.5rem;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+
+}
+
+.result-thumb_img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.result-thumb_title {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.858);
+  color: rgba(255, 255, 255, 0.817);
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  min-height: 0.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+
+
+}
+
+.result-thumb a {
+  margin: 0;
+}

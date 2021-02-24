@@ -1,33 +1,35 @@
-import ResultImage from '../components/ResultImage';
+import ResultThumb from '../components/ResultThumb';
 import { render } from '@testing-library/react';
 
-describe('ResultImage', () => {
+describe('ResultThumb', () => {
   const validProps = {
-    url: 'https://via.placeholder.com/200',
+    thumb: 'https://via.placeholder.com/200',
     description: 'test title',
-    linkToOriginal: 'https://via.placeholder.com/500',
+    id: 'P12345',
+    mediaType: 'image'
   };
   test('it renders correctly', () => {
-    const { asFragment } = render(<ResultImage {...validProps} />);
+    const { asFragment } = render(<ResultThumb {...validProps} />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   describe('it renders props correctly', () => {
     beforeEach(() => {
-      render(<ResultImage {...validProps} />);
+      render(<ResultThumb {...validProps} />);
     });
-    test('image src is set to url prop', () => {
+    test('image src is set to thumb prop', () => {
       const image = document.querySelector('img');
-      expect(image.src).toEqual(validProps.url);
+      expect(image.src).toEqual(validProps.thumb);
     });
     test('image alt text is set to description prop', () => {
       const image = document.querySelector('img');
       expect(image.alt).toEqual(validProps.description);
     });
-    test('anchor tag has its href set to linkToOriginal prop', () => {
+    test('anchor tag href contains id prop', () => {
       const anchor = document.querySelector('a');
-      expect(anchor.href).toEqual(validProps.linkToOriginal);
+      expect(anchor.href).toEqual(
+        `http://images-assets.nasa.gov/image/${validProps.id}/${validProps.id}~orig.jpg`
+      );
     });
-
   });
 });

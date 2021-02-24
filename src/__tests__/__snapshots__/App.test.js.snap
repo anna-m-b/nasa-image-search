@@ -15,14 +15,14 @@ exports[`App on loading, before searching renders correctly 1`] = `
         width="500px"
       />
     </div>
-    <form
+    <div
       class="search-form"
     >
       <label
         class="search-form_label"
         for="search-input"
       >
-        Search the NASA images database
+        Search the NASA media database
       </label>
       <span
         class="search-form_input-and-button"
@@ -36,12 +36,18 @@ exports[`App on loading, before searching renders correctly 1`] = `
         />
         <button
           class="search-form_button"
-          type="submit"
+          name="image"
         >
-          Search
+          Search images
+        </button>
+        <button
+          class="search-form_button"
+          name="video"
+        >
+          Search videos
         </button>
       </span>
-    </form>
+    </div>
   </div>
 </DocumentFragment>
 `;

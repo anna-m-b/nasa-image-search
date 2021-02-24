@@ -34,36 +34,43 @@ describe('App', () => {
       });
     });
 
-    test('calls the getImagesData function with user input', async () => {
+    test('calls the getImagesData function with user input and image media type when images button clicked', async () => {
       const input = screen.getByRole('textbox');
-      const button = screen.getByRole('button', { name: /search/i });
+      const button = screen.getByRole('button', { name: /search images/i });
       userEvent.type(input, 'sun');
       userEvent.click(button);
       await waitFor(() => {
         expect(getImagesData).toHaveBeenCalled();
-        expect(getImagesData).toHaveBeenCalledWith('sun');
+        expect(getImagesData).toHaveBeenCalledWith('sun', 'image');
       });
     });
 
+    test('calls the getImagesData function with user input and video media type when video button clicked', async () => {
+      const input = screen.getByRole('textbox');
+      const button = screen.getByRole('button', { name: /search videos/i });
+      userEvent.type(input, 'sun');
+      userEvent.click(button);
+      await waitFor(() => {
+        expect(getImagesData).toHaveBeenCalled();
+        expect(getImagesData).toHaveBeenCalledWith('sun', 'video');
+      });
+    });
   });
 
   describe('with search result', () => {
     test('loading text displays while images load', async () => {
-      userEvent.click(screen.getByRole('button', { name: /search/i }));
+      userEvent.click(screen.getByRole('button', { name: /search images/i }));
       await waitFor(() => {
         expect(screen.getByText(/loading/i)).toBeInTheDocument();
       });
     });
 
     test('loading text is hidden after app receives response from api', async () => {
-      userEvent.click(screen.getByRole('button', { name: /search/i }));
+      userEvent.click(screen.getByRole('button', { name: /search images/i }));
       getImagesData.mockResolvedValue(mockResults);
       await waitFor(() => {
         expect(screen.queryByText(/loading/i)).not.toBeInTheDocument();
       });
     });
-    
   });
 });
-
-

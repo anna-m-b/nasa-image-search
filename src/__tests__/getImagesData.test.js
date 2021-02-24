@@ -3,13 +3,12 @@ import axios from 'axios';
 import mockAPIResponse from '../test-helpers/mockAPIResponse.json';
 import { mockResults } from '../test-helpers/mockResults';
 
-// jest.mock('../requests/getImagesData');
 jest.mock('axios');
 
 describe('getImagesData', () => {
   test('extracts needed data from api response', async () => {
     axios.get.mockResolvedValue(mockAPIResponse);
-    const results = await getImagesData('sun');
+    const results = await getImagesData('sun', 'image');
     expect(results).toEqual(mockResults);
   });
   

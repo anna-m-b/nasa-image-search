@@ -7,74 +7,104 @@ exports[`Results renders correctly 1`] = `
     data-testid="results"
   >
     <div
-      class="result-image"
+      class="result-thumb"
     >
       <a
-        href="http://images-assets.nasa.gov/image/PIA18906/PIA18906~orig.jpg"
+        href="http://images-assets.nasa.gov/image/PIA12235/PIA12235~orig.jpg"
       >
         <img
-          alt="Sun Shines in High-Energy X-rays"
-          class="result-image_img"
+          alt="Nearside of the Moon"
+          class="result-thumb_img"
           data-testid="result-image"
-          src="http://images-assets.nasa.gov/image/PIA18906/PIA18906~thumb.jpg"
+          id="PIA12235"
+          src="https://images-assets.nasa.gov/image/PIA12235/PIA12235~thumb.jpg"
         />
       </a>
+      <p
+        class="result-thumb_title"
+      >
+        Nearside of the Moon
+      </p>
     </div>
     <div
-      class="result-image"
+      class="result-thumb"
     >
       <a
-        href="http://images-assets.nasa.gov/image/PIA15179/PIA15179~orig.jpg"
+        href="http://images-assets.nasa.gov/image/PIA13517/PIA13517~orig.jpg"
       >
         <img
-          alt="The Sun Magnetic Field"
-          class="result-image_img"
+          alt="Color of the Moon"
+          class="result-thumb_img"
           data-testid="result-image"
-          src="http://images-assets.nasa.gov/image/PIA15179/PIA15179~thumb.jpg"
+          id="PIA13517"
+          src="https://images-assets.nasa.gov/image/PIA13517/PIA13517~thumb.jpg"
         />
       </a>
+      <p
+        class="result-thumb_title"
+      >
+        Color of the Moon
+      </p>
     </div>
     <div
-      class="result-image"
+      class="result-thumb"
     >
       <a
-        href="http://images-assets.nasa.gov/image/PIA14729/PIA14729~orig.jpg"
+        href="http://images-assets.nasa.gov/image/PIA12228/PIA12228~orig.jpg"
       >
         <img
-          alt="Mercury Transit Across the Sun"
-          class="result-image_img"
+          alt="Cassini Look at Water on the Moon"
+          class="result-thumb_img"
           data-testid="result-image"
-          src="http://images-assets.nasa.gov/image/PIA14729/PIA14729~thumb.jpg"
+          id="PIA12228"
+          src="https://images-assets.nasa.gov/image/PIA12228/PIA12228~thumb.jpg"
         />
       </a>
+      <p
+        class="result-thumb_title"
+      >
+        Cassini Look at Water on the Moon
+      </p>
     </div>
     <div
-      class="result-image"
+      class="result-thumb"
     >
       <a
-        href="http://images-assets.nasa.gov/image/PIA17669/PIA17669~orig.jpg"
+        href="http://images-assets.nasa.gov/image/PIA12229/PIA12229~orig.jpg"
       >
         <img
-          alt="Pulses from the Sun"
-          class="result-image_img"
+          alt="Mineral Mapping the Moon"
+          class="result-thumb_img"
           data-testid="result-image"
-          src="http://images-assets.nasa.gov/image/PIA17669/PIA17669~thumb.jpg"
+          id="PIA12229"
+          src="https://images-assets.nasa.gov/image/PIA12229/PIA12229~thumb.jpg"
         />
       </a>
+      <p
+        class="result-thumb_title"
+      >
+        Mineral Mapping the Moon
+      </p>
     </div>
     <div
-      class="result-image"
+      class="result-thumb"
     >
       <a
-        href="http://images-assets.nasa.gov/image/PIA09771/PIA09771~orig.jpg"
+        href="http://images-assets.nasa.gov/image/PIA12233/PIA12233~orig.jpg"
       >
         <img
-          alt="Filtering the Sun"
-          class="result-image_img"
+          alt="Mapping the Moon, Point by Point"
+          class="result-thumb_img"
           data-testid="result-image"
-          src="http://images-assets.nasa.gov/image/PIA09771/PIA09771~thumb.jpg"
+          id="PIA12233"
+          src="https://images-assets.nasa.gov/image/PIA12233/PIA12233~thumb.jpg"
         />
       </a>
+      <p
+        class="result-thumb_title"
+      >
+        Mapping the Moon, Point by Point
+      </p>
     </div>
   </div>
 </DocumentFragment>

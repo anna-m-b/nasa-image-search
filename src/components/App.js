@@ -12,6 +12,7 @@ function App() {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState();
   const [pageNumber, setPageNumber] = useState(0);
+  const [mediaType, setMediaType] = useState()
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
 
@@ -24,9 +25,11 @@ function App() {
     setIsLoading(true);
     setSearchResults();
     setError();
+    
     try {
-      const results = await getImagesData(searchInput.trim());
+      const results = await getImagesData(searchInput.trim(), e.target.name);
       setSearchResults(results);
+      setMediaType(e.target.name)
       results.length && setPageNumber(1);
     } catch (error) {
       setError(error);
@@ -35,13 +38,13 @@ function App() {
   };
 
   const loadNextPage = async () => {
-    const results = await getImagesData(searchInput, pageNumber + 1);
+    const results = await getImagesData(searchInput, mediaType, pageNumber + 1);
     setSearchResults(results);
     setPageNumber((prevPage) => prevPage + 1);
   };
 
   const loadPrevPage = async () => {
-    const results = await getImagesData(searchInput, pageNumber - 1);
+    const results = await getImagesData(searchInput, mediaType, pageNumber - 1);
     setSearchResults(results);
     setPageNumber((prevPage) => prevPage - 1);
   };

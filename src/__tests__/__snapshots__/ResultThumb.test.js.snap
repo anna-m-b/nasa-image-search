@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultThumb it renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="result-thumb"
+  >
+    <a
+      href="http://images-assets.nasa.gov/image/P12345/P12345~orig.jpg"
+    >
+      <img
+        alt="test title"
+        class="result-thumb_img"
+        data-testid="result-image"
+        id="P12345"
+        src="https://via.placeholder.com/200"
+      />
+    </a>
+    <p
+      class="result-thumb_title"
+    >
+      test title
+    </p>
+  </div>
+</DocumentFragment>
+`;

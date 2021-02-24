@@ -4,9 +4,9 @@ import '../styles/SearchForm.css';
 
 const SearchForm = ({ onChange, onSearchSubmit, searchInput }) => {
   return (
-    <form className="search-form" onSubmit={onSearchSubmit}>
+    <div className="search-form">
       <label htmlFor="search-input" className="search-form_label">
-        Search the NASA images database
+        Search the NASA media database
       </label>
       <span className="search-form_input-and-button">
         <input
@@ -18,11 +18,15 @@ const SearchForm = ({ onChange, onSearchSubmit, searchInput }) => {
           onChange={onChange}
         />
 
-        <button type="submit" className="search-form_button">
-          Search
+        <button onClick={onSearchSubmit} name="image" className="search-form_button">
+          Search images
+        </button>
+
+        <button onClick={onSearchSubmit} name="video" className="search-form_button">
+          Search videos
         </button>
       </span>
-    </form>
+    </div>
   );
 };
 

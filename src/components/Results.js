@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ResultImage from './ResultImage';
+import ResultThumb from './ResultThumb';
 import '../styles/Results.css';
 
 const Results = ({ results }) => {
@@ -13,9 +13,10 @@ const Results = ({ results }) => {
   } else {
     const display = results.map((item) => {
       return (
-        <ResultImage
+        <ResultThumb
           thumb={item.thumb}
           description={item.title}
+          mediaType={item.media_type}
           key={item.nasa_id}
           id={item.nasa_id}
         />
