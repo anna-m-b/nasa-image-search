@@ -6,7 +6,7 @@
 2. [Screenshots](#screenshots)
 3. [Tech Stack](#tech-stack)
 4. [Fulfilled User Stories](#user-stories)
-5. [Run the app](#Get-the-app-running:-Instructions)
+5. [Run the app](#run-it)
 6. [View it online](#view-it-online)
 7. [If I had more time...](#if-i-had-more-time)
 
@@ -35,11 +35,16 @@ And this example is given:
 ### Screenshots:
 
 **Browser:**
+
+<br />
 <img src='./src/images/browser-scrnshot.png' alt="browser screenshot" width='450px' />
 
 <br />
+<br />
 
 **Mobile:**
+
+<br />
 <img src='./src/images/scrnshot-mob-fx.png' alt="mobile screenshot" width='250px' />
 
 ---
@@ -85,7 +90,7 @@ As a space fan...
 
 ---
 
-### Get the app running: Instructions
+### Run it
 
 - Clone this repo.
 - `cd` into the project folder.
@@ -115,6 +120,13 @@ I'd possibly switch to using StyledComponents or Sass to make the web app more m
 <img src='./src/images/test-coverage.png' alt='test coverage report' width="500px"/>
 
 We can see that some branches and functions haven't been tested. These are related to the videos search and the navigation - loading previous and next pages. So I would complete the test suite by testing the key functionality of these features.
+
+<br />
+
+**I'd investigate a bug:** when clicking 'next page' on a video search, the next page loads fine, but in the browser console we get a rejected request with code 403: Forbidden. This doesn't happen when we get the next page of images.
+
+<br />
+
 
 
 Also, I'd have a go at implementing the following:
