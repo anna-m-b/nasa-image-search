@@ -74,7 +74,7 @@ As a space fan...
   So that I can get space images of a certain content.  
   <br/>
 
-- [x] I want to see results displayed in image form,  
+- [x] I want to see results displayed in image form,    
   So I can quickly decide which image to use.  
   <br/>
 
