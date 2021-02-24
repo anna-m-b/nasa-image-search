@@ -76,16 +76,16 @@ As a space fan...
   So I can quickly decide which image to use.  
   <br/>
 
-- [x] I want to click to open the original image,
-  So I can access the image in its original size.
+- [x] I want to click to open the original image,  
+  So I can access the image in its original size.  
   <br />
 
-- [x] I want to receive an appropriate message if a search has no results,
+- [x] I want to receive an appropriate message if a search has no results,  
   So I understand why no images have been returned.  
   <br/>
 
 - [x] I'd like to also search for videos,  
-  So I can access more of Nasa's media.
+  So I can access more of Nasa's media.  
   <br />
 
 ---
