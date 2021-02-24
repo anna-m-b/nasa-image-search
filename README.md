@@ -15,8 +15,9 @@
 For this technical test, the brief is to create a React web application that allows space fans to search for images based on a query relating to space.
 
 Requirements
-● A Search page which allows space fans to search for images by keyword
-● Images must be returned upon a successful search
+● A Search page which allows space fans to search for images by keyword  
+
+● Images must be returned upon a successful search  
 
 Styling will also be considered.
 
@@ -156,3 +157,4 @@ for a smoother experience.
 
 ### Author
 Anna Balquin
+
