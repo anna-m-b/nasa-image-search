@@ -140,9 +140,11 @@ As a space fan...
 - [ ] I'd like the results to load faster, 
 for a smoother experience.
       <br />
+      
 - [ ] I'd like the option to click through to get more information,  
       So I can use it as a research tool. 
       <br />
+      
 - [ ] I'd like to filter results by type,  
       So I can get images of a certain category by keyword.  
       (e.g. real moon images as opposed to representations/informational)  
