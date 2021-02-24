@@ -7,7 +7,8 @@
 3. [Tech Stack](#tech-stack)
 4. [Fulfilled User Stories](#user-stories)
 5. [Run the app](#Get-the-app-running:-Instructions)
-6. [If I had more time...](#if-i-had-more-time)
+6. [View it online](#view-it-online)
+7. [If I had more time...](#if-i-had-more-time)
 
 ### The Brief
 
@@ -93,19 +94,30 @@ As a space fan...
 
 --- 
 
+### View it online
+
+It's deployed with Vercel: https://nasa-image-search-tawny.vercel.app/
+
+---
 
 ### If I had more time...
 
-I'd improve the styling, especially on mobile and very large screens, and refactor my CSS. I'd possibly switch to using StyledComponents or Sass to make the web app more maintainable and easier to develop further.
+**I'd improve the styling**, especially on mobile and very large screens, and refactor my CSS. 
 
-I would write more tests to improve test coverage. Here's the current coverage report:
+Styling also needs some adjustments for displaying video results, as the video thumbnails are generally smaller than the image thumbnails. The titles are wider than the images in full screen on a standard laptop.
+
+I'd possibly switch to using StyledComponents or Sass to make the web app more maintainable and easier to develop further.
+
+<br />
+
+**I would write more tests** to improve test coverage. Here's the current coverage report:
 
 <img src='./src/images/test-coverage.png' alt='test coverage report' width="500px"/>
 
 We can see that some branches and functions haven't been tested. These are related to the videos search and the navigation - loading previous and next pages. So I would complete the test suite by testing the key functionality of these features.
 
 
-Also, I'd implement the following:
+Also, I'd have a go at implementing the following:
 
 **User Stories - Desirable Extras**
 
