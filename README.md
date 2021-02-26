@@ -22,7 +22,7 @@ Requirements
 
 Styling will also be considered.
 
-A nasa logo and has been provided: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
+A nasa logo has been provided: https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg
 
 The relevant endpoint also is provided:
 image search:
